@@ -1,0 +1,74 @@
+<html>
+
+<head>
+  <title>Swimming WRs</title>
+  <script src="js/bundle.js"></script>
+  <link rel="stylesheet" href="/styles/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+</head>
+
+<body>
+  <div class="opcacity" id="opacity">
+    <h1>World Records in Swimming</h1>
+    <form class="entry-form" id="entry-form">
+          <div class="three-fields">
+            <div class="field">
+              <!-- <label for="style">Style</label> -->
+              <select class="dropdown" name="style">
+                <option selected disabled>Choose Style</option>
+                <option value="Freestyle">Freestyle</option>
+                <option value="Breaststroke">Breaststroke</option>
+                <option value="Butterfly">Butterfly</option>
+                <option value="Backstroke">Backstroke</option>
+                <option value="Individual Medley">Individual Medley</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="distance">Distance (m)</label>
+              <input type="number" id="distance" step="50" />
+            </div>
+            <div class="field">
+              <label for="record">World Record</label>
+              <input type="text" id="record" placeholder="00:00.00"/>
+            </div>
+          </div>
+          <input type="submit" id="save" value="Add Record" class="submit-button" />
+
+        </form>
+
+    <div class="time-table" id="time-table">
+
+    </div>
+  </div>
+  <div class="update-form" id="update-form">
+    <form class="updater" id="updater">
+          <div class="three-fields">
+            <div class="field">
+              <!-- <label for="style">Style</label> -->
+              <select class="dropdown" name="style">
+                <option selected disabled>Choose Style</option>
+                <option value="Freestyle">Freestyle</option>
+                <option value="Breaststroke">Breaststroke</option>
+                <option value="Butterfly">Butterfly</option>
+                <option value="Backstroke">Backstroke</option>
+                <option value="Individual Medley">Individual Medley</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="distance">Distance (m)</label>
+              <input type="number" id="distance" step="50" />
+            </div>
+            <div class="field">
+              <label for="record">World Record</label>
+              <input type="text" id="record" placeholder="00:00.00"/>
+            </div>
+          </div>
+          <input type="submit" name="update" id="save" value="Update Record" class="submit-button" />
+      </form>
+      <form class="deleter" id=deleter>
+        <input type="submit" name="delete" id="delete" value="Delete Record" class="submit-button" />
+      </form>
+  </div>
+</body>
+
+</html>
